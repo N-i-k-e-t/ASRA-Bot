@@ -18,7 +18,7 @@ To see a demonstration of ReceiptAce in action, please watch the following video
 
 **ASRA BOT **
 
-!(ASRA Bot (2).png)  
+![](ASRA Bot (2).png)  
 
 
 ## Features
