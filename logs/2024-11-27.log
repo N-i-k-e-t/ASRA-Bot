@@ -1,0 +1,3 @@
+2024-11-27 10:00:00,000 - INFO - Email email1 processed successfully.
+2024-11-27 10:01:00,000 - INFO - Sending email notification for email1 with data: {'vendor': 'ABC Restaurant', ...}
+2024-11-27 10:01:00,000 - ERROR - Error processing receipt receipts/food/receipt1.jpg: No such file or directory

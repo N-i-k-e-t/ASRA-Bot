@@ -1,0 +1,15 @@
+{
+    "vendor": "Shell",
+    "date": "2024-11-27",
+    "total": 32.75,
+    "items": [
+        "Regular Gasoline",
+        "Car Wash"
+    ],
+    "receipt_number": "67890",
+    "confidence_scores": {
+        "vendor": 0.95,
+        "date": 0.98,
+        "total": 0.99
+    }
+}

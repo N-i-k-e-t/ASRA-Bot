@@ -1,0 +1,16 @@
+{
+    "vendor": "ABC Restaurant",
+    "date": "2024-11-26",
+    "total": 25.50,
+    "items": [
+        "Burger",
+        "Fries",
+        "Soda"
+    ],
+    "receipt_number": "12345",
+    "confidence_scores": {
+        "vendor": 0.98,
+        "date": 0.95,
+        "total": 0.99
+    }
+}

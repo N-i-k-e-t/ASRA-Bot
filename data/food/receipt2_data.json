@@ -1,0 +1,16 @@
+{
+    "vendor": "Pizza Hut",
+    "date": "2024-11-27",
+    "total": 30.75,
+    "items": [
+        "Large Pizza",
+        "Coke",
+        "Garlic Bread"
+    ],
+    "receipt_number": "654321",
+    "confidence_scores": {
+        "vendor": 0.95,
+        "date": 0.98,
+        "total": 0.97
+    }
+}

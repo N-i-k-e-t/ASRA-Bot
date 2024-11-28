@@ -1,0 +1,5 @@
+# List all the necessary libraries
+requests
+imaplib
+google-api-python-client
+oauth2client

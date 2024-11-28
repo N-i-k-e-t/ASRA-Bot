@@ -1,0 +1,10 @@
+{
+    "trucap_sid": "YOUR_TRUCAP_SID",
+    "trucap_token": "YOUR_TRUCAP_TOKEN",
+    "google_form_id": "YOUR_GOOGLE_FORM_ID",
+    "gmail_user": "YOUR_GMAIL_USER",
+    "gmail_password": "YOUR_GMAIL_PASSWORD",
+    "redis_host": "localhost",
+    "redis_port": 6379,
+    "email_subject": "Receipt Summary"
+}

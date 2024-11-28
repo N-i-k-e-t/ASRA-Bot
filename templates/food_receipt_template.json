@@ -1,0 +1,8 @@
+{
+    "template_id": "food_template_1",
+    "fields": [
+        {"name": "vendor", "regex": "\\bVendor:\\s*(.*?)\\b"},
+        {"name": "date", "regex": "\\bDate:\\s*(.*?)\\b"},
+        {"name": "total", "regex": "\\bTotal:\\s*(\\d+(?:\\.\\d+)?)\\b"}
+    ]
+}

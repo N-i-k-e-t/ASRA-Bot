@@ -1,0 +1,16 @@
+{
+    "vendor": "BP",
+    "date": "2024-11-28",
+    "total": 45.20,
+    "items": [
+        "Premium Gasoline",
+        "Engine Oil",
+        "Car Wash"
+    ],
+    "receipt_number": "987654",
+    "confidence_scores": {
+        "vendor": 0.99,
+        "date": 0.95,
+        "total": 0.96
+    }
+}

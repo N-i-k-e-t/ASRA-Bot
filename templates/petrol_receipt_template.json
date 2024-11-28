@@ -1,0 +1,25 @@
+{
+    "template_id": "petrol_template_1",
+    "fields": [
+    {
+        "name": "vendor",
+        "regex": "\\b(Shell|BP|ExxonMobil|.*?)(?:\\s+.*?)?(?=\\s*\\d+\\.\\d+|\\d+\\s*\\w+)\\b"
+    },
+    {
+        "name": "date",
+        "regex": "\\bDate:\\s*(\\d{2}/\\d{2}/\\d{4}|\\d{4}-\\d{2}-\\d{2})\\b"
+    },
+    {
+        "name": "total",
+        "regex": "\\bTotal:\\s*(\\d+(?:\\.\\d+)?)\\b"
+    },
+        {
+        "name": "pump_number",
+        "regex": "\\bPump\\s*#\\s*(\\d+)\\b"
+    },
+    {
+        "name": "fuel_type",
+        "regex": "\\b(Regular|Premium|Diesel|.*?)(?:\\s+.*?)?\\b"
+    }
+    ]
+}

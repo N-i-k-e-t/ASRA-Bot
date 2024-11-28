@@ -1,0 +1,4 @@
+{
+    "google_forms_api_key": "YOUR_GOOGLE_FORMS_API_KEY",
+    "google_forms_spreadsheet_id": "YOUR_SPREADSHEET_ID"  # If you are using a spreadsheet
+}

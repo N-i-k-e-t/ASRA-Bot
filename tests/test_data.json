@@ -1,0 +1,40 @@
+[
+{
+    "receipt_path": "receipts/food/receipt1.pdf",
+    "expected_data": {
+        "vendor": "ABC Restaurant",
+        "date": "2024-11-26",
+        "total": 25.50,
+        "items": ["Burger", "Fries", "Soda"],
+        "receipt_number": "12345"  # Add expected receipt number
+    },
+    "expected_email_subject": "Receipt Summary",
+    "expected_recipient_email": "recipient@example.com" # Recipient email
+},
+{
+    "receipt_path": "receipts/petrol/receipt3.png",
+    "expected_data": {
+        "vendor": "Shell",
+        "date": "2024-11-27",
+        "total": 32.75,
+        "items": ["Regular Gasoline", "Car Wash"],
+        "receipt_number": "67890"
+    },
+    "expected_email_subject": "Receipt Summary",
+    "expected_recipient_email": "recipient@example.com"
+},
+{
+    "receipt_path": "receipts/food/invalid_format_receipt.pdf",
+    "expected_data": null,
+    "expected_email_subject": "Receipt Summary",
+    "expected_recipient_email": "recipient@example.com"
+
+},
+    {
+    "receipt_path": "receipts/nonexistent_receipt.pdf",
+    "expected_data": null,
+    "expected_email_subject": "Receipt Summary",
+    "expected_recipient_email": "recipient@example.com"
+
+}
+]
