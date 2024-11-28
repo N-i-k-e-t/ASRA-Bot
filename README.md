@@ -1,5 +1,8 @@
 # ReceiptAce: Automated Receipt Processing
 
+## TEAM AI TASK FORCE (ATF) or ASARA BOT
+by Niket Patil
+
 This project automates the processing of food and petrol bill receipts from emails using Datamatics TruBot, TruCap+, and Python.
 
 
