@@ -1,0 +1,66 @@
+# Workflow Name: ReceiptProcessingWorkflow
+
+# Variables
+mailFolder = "INBOX"  // Or the specific folder you want to monitor
+attachmentFolderPath = "data/receipts" // Make this configurable if possible
+pythonScriptPath = "src/process_email.py"
+
+
+
+# Start
+Begin Workflow
+
+# 1. Connect to Mail Server (IMAP)
+Connect to IMAP Mail Server (
+    Server: "imap.gmail.com", // Or your IMAP server
+    Port: 993,
+    Username: GetCredential("GmailUsername"), // Securely stored credentials
+    Password: GetCredential("GmailPassword")
+)
+
+# 2. Get Emails
+Get Emails (
+    Folder: mailFolder,
+    Filter: Subject contains "Receipt" AND From contains "sender@example.com" // Example filter
+    Output: emailList // A list of retrieved emails
+)
+
+
+# 3. Loop through Emails
+For Each email in emailList:
+    # 4. Save Attachment
+    attachmentPath = attachmentFolderPath + "/" + GenerateDynamicFilename(email.ID) // Create unique filename
+    Save Attachment (
+        Email: email,
+        FilePath: attachmentPath
+    )
+
+    # 5. Call Python Script
+    summary = Run Python Script (
+        Path: pythonScriptPath,
+        Arguments: attachmentPath
+    )
+
+
+    # 6. (Optional) Send Email Notification (If using TruBot)
+    Send Email (
+        To: "finance@example.com",
+        Subject: "Receipt Processed",
+        Body: "Receipt processed successfully:\n" + summary // Use returned summary from Python
+    )
+
+End Loop
+
+# 7. Disconnect from Mail Server
+Disconnect from IMAP Mail Server
+
+
+# End
+End Workflow
+
+
+# Helper Function (Pseudo-code) - Implement in TruBot as needed
+Function GenerateDynamicFilename(emailID):
+    timestamp = GetCurrentTimestamp()
+    filename = emailID + "_" + timestamp + ".pdf" // Or .jpg, check attachment type
+    return filename
