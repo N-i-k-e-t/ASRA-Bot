@@ -5,6 +5,11 @@ by Niket Patil
 
 This project automates the processing of food and petrol bill receipts from emails using Datamatics TruBot, TruCap+, and Python.
 
+**Demo Video:**
+
+To see a demonstration of ReceiptAce in action, please watch the following video:
+
+[https://ai.invideo.io/watch/BsD8kfR8g0v](https://ai.invideo.io/watch/BsD8kfR8g0v)
 
 ## Features
 
